@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/server.js",
     "dev": "nodemon src/server.js",
-    "test": "jest --runInBand",
+    "test": "NODE_ENV=test jest --runInBand",
     "setup-dbs": "psql -f ./db/setup.sql",
     "build-schema": "psql -d hmcts_tasks -f ./db/schema.sql",
     "build-test-schema": "psql -d hmcts_tasks_test -f ./db/schema.sql"
